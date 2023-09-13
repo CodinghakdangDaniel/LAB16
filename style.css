@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Italianno&family=Raleway:ital,wght@0,100;0,400;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(241,245,248);
+    height: 100%;
+}
+
+/* text 부분 */
+h1 {
+    font-family: 'Italianno', cursive;
+    font-size: 100px;
+    color: rgb(200,163,105);
+    text-align: center;
+}
+
+.questions {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: rgb(15, 40, 74);
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px; 
+}
+/* 질문 박스 */
+.container1 {
+    width: 1000px;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px;
+    overflow: auto;
+}
+
+.container2 {
+    width: 1000px;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px;
+    margin-top: 80px;
+    overflow: auto;
+}
+
+.container3 {
+    width: 1000px;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px;
+    margin-top: 80px;
+}
+
+/* 버튼 */
+#btn1 {
+    width: 50px;
+    height: 50px;
+    float: right;
+    background-color:rgb(200,163,105);
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    /* transition: all 2 ease; */
+}
+
+/* 답변 */
+#details1 {
+    display: none;
+}
+
+#details2 {
+    display: none;
+}
+
+#details3 {
+    display: none;
+}
+        
+#divisionLine {
+    border-top: 4px solid rgb(15, 40, 74);
+    margin: 30px auto;
+    width: 900px;
+}
