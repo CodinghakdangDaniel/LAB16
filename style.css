@@ -26,51 +26,56 @@ h1 {
     padding-left: 30px;
     padding-bottom: 30px; 
 }
+
 /* 질문 박스 */
-.container1 {
-    width: 1000px;
-    height: auto;
-    background-color: white;
-    margin: 0 auto;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px;
-    overflow: auto;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.container2 {
-    width: 1000px;
-    height: auto;
+.box {
     background-color: white;
-    margin: 0 auto;
-    border-radius: 20px;
+    width: 1200px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    padding: 20px;
+    color: rgb(15, 40, 74);
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: 0.4s;
+    margin-bottom: 40px;
     box-shadow: 3px 3px 3px;
-    margin-top: 80px;
-    overflow: auto;
 }
 
-.container3 {
-    width: 1000px;
-    height: auto;
-    background-color: white;
-    margin: 0 auto;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px;
-    margin-top: 80px;
+.active, #box1:hover {
+    background-color:aquamarine;
+}
+
+.active, #box2:hover {
+    background-color:lightpink;
+}
+
+.active, #box3:hover {
+    background-color:khaki;
 }
 
 /* 버튼 */
-#btn1 {
-    width: 50px;
-    height: 50px;
+#btn:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    color: rgb(200,163,105);
     float: right;
-    background-color:rgb(200,163,105);
-    cursor: pointer;
-    align-items: center;
-    text-align: center;
-    /* transition: all 2 ease; */
+    margin-left: 5px;
+}
+    
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-/* 답변 */
+/* 버튼 클릭 시 세부사항 */
 #details1 {
     display: none;
 }
@@ -84,7 +89,7 @@ h1 {
 }
         
 #divisionLine {
-    border-top: 4px solid rgb(15, 40, 74);
-    margin: 30px auto;
-    width: 900px;
+    border-top: 3px solid gray;
+    margin: 20px auto;
+    width: 1150px;
 }
